@@ -1,0 +1,69 @@
+---
+title: "App Design"
+author: "Quinn Hungerford"
+date: "2026-09-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## PCA Image Compression App
+
+This image compression application will allow users to upload an image and check how different levels of PCA compression would impact its appearance. Users will be able to select the number of principal components on a sliding scale and then compare the compressed image with the original image side-by-side below the scale.
+
+<div style="border: 2px solid #cccccc; border-radius: 12px; padding: 25px; margin-top: 25px; background-color: #fafafa;">
+
+<h2 style="margin-top: 0;">PCA Image Compressor</h2>
+
+<p>Upload an image and check out its PCA compression.</p>
+
+<hr>
+
+<h3>1. Upload Image</h3>
+
+<div style="border: 2px dashed #aaaaaa; padding: 25px; text-align: center; border-radius: 8px;">
+  <strong>Choose Image</strong><br>
+  <span style="color: #777777;">Drag and drop an image here or browse files</span>
+</div>
+
+<br>
+
+<h3>2. Select Compression Level</h3>
+
+<p><strong>Number of principal components (k): 10</strong></p>
+
+<input type="range" min="1" max="50" value="10" style="width: 100%;">
+
+<br><br>
+
+<h3>3. Compare Images</h3>
+
+<div style="display: flex; gap: 25px;">
+
+<div style="width: 50%; text-align: center;">
+  <h4>Original Image</h4>
+  <div style="height: 250px; border: 1px solid #bbbbbb; border-radius: 8px; display: flex; align-items: center; justify-content: center; background-color: white;">
+    Uploaded Image
+  </div>
+</div>
+
+<div style="width: 50%; text-align: center;">
+  <h4>Compressed Image</h4>
+  <div style="height: 250px; border: 1px solid #bbbbbb; border-radius: 8px; display: flex; align-items: center; justify-content: center; background-color: white;">
+    PCA Compressed Image
+  </div>
+</div>
+
+</div>
+
+<br>
+
+<div style="text-align: center;">
+  <button style="padding: 10px 25px; font-size: 16px;">Compress Image</button>
+</div>
+
+</div>
+
+<!-- AI assistance was used to help develop the HTML/CSS formatting for this app mockup. -->
